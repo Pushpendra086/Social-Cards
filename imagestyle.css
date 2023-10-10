@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center;  */
+}
+.row{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 5px solid black; */
+    position: relative;
+}
+.col{
+    flex-basis:30% ;
+    border: 5px sollid black;
+    position: relative;
+}
+.col img{
+    width: 100%;
+    height: 500px;
+
+}
+.col .info{
+    width: 100%;
+    background: black;
+    color: white;
+    position: absolute;
+   padding: 10px 0px;
+    box-sizing: border-box;
+    left: 20%;
+   transform: translate(-60px,100px);
+   width: 90%; 
+    bottom: 50px;
+    text-align: center;
+}
+.info H2{
+    text-transform: capitalize;
+    font-size: 25px;
+   margin: 10px;
+   
+
+}
+.info p{
+    text-transform: capitalize; 
+    font-size: 20px;
+   margin: 10px;
+    
+}
+.layer img{
+    transition: all .5s ease;
+
+}
+.icon{
+    max-height: 0px;
+    overflow: hidden;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    position: relative;
+   /* top: 10px; */
+   /* padding-bottom: 5px; */
+   
+   transition: all 1s;
+}
+.col:hover .icon{
+    max-height: 100px;
+    
+} 
+.fa-facebook{
+    color: rgb(48, 48, 212) ;
+}
+.fa-instagram{
+    color: #e95950 ;
+}
+.fa-youtube{
+    color: rgb(105, 16, 18) ;
+}
+.fa-twitter{
+    color: rgb(68, 68, 155) ;
+}
+.img{
+    filter: grayscale(100%);
+}
+.layer{
+  width: 100%;
+  top: 0px;
+  position: absolute;
+  max-height:0px ;
+  overflow: hidden;
+  border-bottom: 1px solid red;
+  transition: all 1s;
+}
+.col:hover .layer{
+    max-height: 99%;
+}
+.layer:hover img{
+    transform: scale(1.2);
+ 
+}
